@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Cairo', sans-serif;
+  direction: rtl;
+}
+
+.app-checkbox {
+  @apply h-4 w-4 rounded-lg border-gray-200 text-blue-600 ring-2 ring-inset  ring-blue-600;
+  border-radius: 20%;
+}
+
+.app-checkbox-lable {
+  @apply text-sm font-medium leading-6 text-gray-700;
+}
+
+.app-select {
+  @apply mt-1 block w-full rounded-lg border-0 p-2   text-gray-900 shadow-sm outline-none ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6;
+
+  /* FIX OF UGLY SELECT */
+  background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' fill='currentColor' class='bi bi-chevron-down' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>")
+    no-repeat;
+  background-position: calc(100% - 96%) center !important;
+  -moz-appearance: none !important;
+  -webkit-appearance: none !important;
+  appearance: none !important;
+}
+
+.app-input {
+  @apply mt-1 block w-full rounded-lg border-0 p-2 text-gray-900 shadow-sm outline-none ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6;
+}
+
+.app-input-lable {
+  @apply block text-sm font-medium leading-6 text-gray-900;
+}
+
+.app-submit-btn {
+  @apply inline-flex w-full justify-center rounded-md bg-blue-600 py-2 text-base font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500;
+}
