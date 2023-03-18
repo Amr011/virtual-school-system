@@ -1,5 +1,3 @@
-#### Vite Vue Tailwind DIGITAL MENU SOLOUTION
-
-#### Created By Amr Aboras
+#### Al-Sham Virtual School Student Information System
 
 #### [@amraboras](https://amraboras.webflow.io)
